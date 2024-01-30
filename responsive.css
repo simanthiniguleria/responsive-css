@@ -1,4 +1,4 @@
-/*CSS responsive for IPad Mini*/
+/*CSS responsive for Tablet*/
 @media only screen and (max-width: 1199px){
     h1{
         font-size: 30px;
@@ -17,6 +17,7 @@
     .primary-button a{
         padding: 12px 16px 14px 16px;
         font-size: 13px;
+        color: #FCF7F8;
     }
     /*Secondary button*/
     .secondary-button a{
@@ -30,91 +31,66 @@
     }
     
     /*Header*/
-    .top-bar::before{
+    .heading::before{
         height: 4px;
         width: 100%;
+        position: fixed;
+        z-index:4;
     }
-
-    .menu{
+    .search{
         display: none;
-    
-        max-width: 720px;
-        margin-top: 100px;
-        margin-left: 20px;
-      }
-      .menu a{
-      text-decoration: none;
-      line-height: 160%;
-      color: #1D1D1B;
-      transition: color 1s;
-      }
-      .menu li {
-        padding-bottom: 34px;
-      }
-    
-      .enquirybtn a{
-        padding: 12px 16px 14px 16px;
-        margin: 90px 125px;
-        width: 335px; 
-        text-align: center;
-    
-        background-color: #8B3C50;
-        border-radius: 1px;
-        text-decoration: none;
-        color: #FCF7F8;
-        border:1px solid #EEEEEE;
-        transition: color 1s, background-color 2s;
-        font-family: Tiempos Text-2;
-        line-height: 130%;
     }
-      .enquirybtn a:hover{
-        color:#8B3C50;
-        background-color: #FCF7F8;
-    }
-      .sites {
-      padding-top: 16px;
-    }
-    .sites ul{
-      display: flex;
-    }
-    .sites li{
-      padding-right: 31px;
-    }
-
-    .controls-image{
-        display: initial;
+    .search-icon{
         width: 24px;
         height: 24px;
+        display: initial;
+        margin-right: 24px;
     }
-
-    .controls-line{
-        display: block;
-        margin: 32px;
-      }
-        
-      
+    .header{
+        position: relative;
+        height:88px;
+        z-index: 4;
+    }
     .header-bar{
-
-        display: flex;
-        max-width: 720px;
-        margin: auto;
-        justify-content: space-between;
-        align-items: center;
         padding: 28px 0px;
+        align-items: center;
+        max-width: 100%;
+        height:88px;
+        background-color: #FFFFFF;
+        position: fixed;
+        z-index: 3;
+        width:100%;
+        padding-left: 24px;
+        padding-right: 24px;
     }
     .logo img{
         width: 215px;
         height: 16px;
     }
-    .header-content nav{
+    .header-part nav{
         display: none;
     }
-    .header-content nav ul li{
+    .header-part nav ul li{
         padding-right: 20px;
     }
-    .enquiry-button{
+    .header-part .primary-button{
         display: none;
     }
+    .toggle
+    {
+        max-width:720px;
+        margin-top: 88px ;
+    }
+    .control-lines{
+        display: initial;
+    }
+    .toggle .button{
+        justify-content: center;
+    }
+    .social-icons li{
+        padding-left: 0;
+    }
+   
 
     /*Footer*/
     footer{
@@ -131,11 +107,11 @@
         width: 255px;
         height: 19px;
     }
-    .footer-bar-2{
+    .footer2{
         margin-top: 36px;
         height: 243px;
     }
-    .footer-left-list nav ul li{
+    .footer-left nav ul li{
         padding-right: 30px;
     }
     .footer-left-text p{
@@ -156,18 +132,14 @@
 
     /*CSS for body*/
     .body-container{
-        max-width: 1199px;
+        max-width: 720px;
     }
 
     /*banner*/
     .banner-section{
-        max-width: 720px;
+        max-width: 100%;
         margin-bottom: 60px;
-        margin-top: 10%;
-        
-    }
-    .enquirybtn{
-        margin-left: 20%;
+        margin-top: 90px;
     }
     .banner-container{
         width: 720px;
@@ -177,7 +149,7 @@
         width: 447px;
         height: 301px;
     }
-    .banner-content-container{
+    .ban-content-container{
         width: 385px;
         height: 281px;
         top:10px;
@@ -206,10 +178,11 @@
     }
 
     /*What we do section*/
-    .menu-info-container{
+    .menu-container
+    {
         margin-top: 60px;
         margin-bottom: 60px;
-        max-width: 720px;
+        max-width: 100%;
     }
     .menu-info{
         height: 304px;
@@ -237,7 +210,7 @@
 
     /*Speciality Section*/
     .rounded-grid-section{
-        max-width: 720px;
+        max-width: 100%;
         margin-top: 49px;
     }
     .rounded-grid-section h1{
@@ -264,7 +237,7 @@
 
     /*Our People*/
     .team-container{
-        max-width: 720px;
+        max-width: 100%;
         height: 301px;
         left:0;
     }
@@ -287,8 +260,10 @@
     }
 
     /*Our Section*/
+    .story-section{
+        max-width: 100%;
+    }
     .story-container{
-        max-width: 720px;
         height: 301px;
         margin-top: 50px;
     }
@@ -326,7 +301,7 @@
         margin-left: 85px;
     }
     .scroll-gap a{
-        margin-right: 50px;
+        margin-right: 25px;
     }
     .scroll-gap p{
         font-size: 14px;
@@ -357,11 +332,11 @@
     .support-logos{
         margin-top: 41.25px;
     }
-    .support-1{
+    .australia{
         width: 200.976px;
         height: 80px;
     }
-    .support-2{
+    .wisa{
         width: 111.22px;
         height: 80px;
     }
@@ -417,96 +392,44 @@
 }
 
 
-
 /*CSS responsive for Mobile*/
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 767px) {
 
     h2{
         font-size: 21px;
     }
     /*Header*/
-    .top-bar::before{
+    .heading::before{
         height: 44px;
         width: 100%;
-    }
-    
-    .logo img{
-        width: 215px;
-        height: 16px;
     }
     header{
         height: 114px;
         align-items: center;
     }
     .header-bar{
-        margin-left: 20px;
         margin-right: 20px;
-        padding-top: 62px;
+        padding-top: 88px;
         max-width: 100%;
     }
-    .controls-image{
-        display: initial;
-    }
-
-    .controls-line{
-        display: block;
-        margin-right: 50px;
-      }
-      .menu{
-        display:none;
     
-        max-width: 720px;
-        margin-top: 100px;
-        margin-left: 20px;
-      }
-      .menu a{
-      text-decoration: none;
-      line-height: 160%;
-      color: #1D1D1B;
-      transition: color 1s;
-      }
-      .menu li {
-        padding-bottom: 34px;
-      }
-    
-      .enquirybtn a{
-        padding: 12px 16px 14px 16px;
-        margin: 90px 125px;
-        width: 335px; 
-        text-align: center;
-    
-        background-color: #8B3C50;
-        border-radius: 1px;
-        text-decoration: none;
-        color: #FCF7F8;
-        border:1px solid #EEEEEE;
-        transition: color 1s, background-color 2s;
-        font-family: Tiempos Text-2;
-        line-height: 130%;
-    }
-      .enquirybtn a:hover{
-        color:#8B3C50;
-        background-color: #FCF7F8;
-    }
-      .sites {
-      padding-top: 16px;
-    }
-    .sites ul{
-      display: flex;
-    }
-    .sites li{
-      padding-right: 31px;
+    /*toggle button*/
+    .toggle{
+        max-width: 767px;
+        width: 100%;
+        margin-top: 0px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
-      .search {
-            margin-left: 30%;
-      }
 
     /*Footer*/
     footer{
         margin-top: 40px;
-        max-width: 375px;
-        margin-left: 20px;
+        max-width: 100%;
+        margin-left: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .footer-bar-1{
         padding-top: 40px;
@@ -516,7 +439,7 @@
         padding: 40px 31px;
         padding-left: 0;
     }
-    .footer-bar-2{
+    .footer2{
         margin-top: 0;
         height: 372px;
     }
@@ -524,10 +447,10 @@
         max-width: 250px;
         top: 143px;
     }
-    .footer-left-list ul{
+    .footer-left ul{
         flex-wrap: wrap;
     }
-    .footer-left-list ul li{
+    .footer-left ul li{
         padding-right: auto;
         width:50%;
     }
@@ -549,18 +472,16 @@
 
     /*CSS for body*/
     .body-container{
-        max-width: 375px;
-        margin-top: 30px;
+        max-width: 767px;
     }
-    
-    
+
     /*Banner section*/
     .banner-section{
-        max-width: 375px;
-        height: 512px;
+        max-width: 100%;
+        margin-top:10px;
     }
     .banner-container{
-        width: 375px;
+        width: 100%;
         height: 276px;
     }
     .banner-container img{
@@ -569,7 +490,7 @@
         object-fit: cover;
         right: 0;
     }
-    .banner-content-container{
+    .ban-content-container{
         width: 335px;
         height: 296px;
         top: 188px;
@@ -585,13 +506,13 @@
     }
 
     /*What we do section*/
-    .menu-info-container{
+    .menu-container{
         margin-top: 30px;
         margin-bottom: 54px;
     }
     .menu-info{
         height: 445px;
-        width: 335px;
+        width: 100%;
         margin: auto;
     }
     .menu-info h1{
@@ -606,6 +527,8 @@
         width: 296.729px;
         height: 124px;
         left: 20px;
+        bottom: -54px;
+        right: auto;
     }
 
     /*Speciality section*/
@@ -629,7 +552,7 @@
         height: 484px;
     }
     .team-container{
-        width: 375px;
+        width: 100%;
         height: 276px;
     }
     .team-container img{
@@ -658,7 +581,7 @@
 
     /*Our story section*/
     .story-section{
-        max-width: 375px;
+        max-width: 100%;
         height: 484px;
         margin-top: 13px;
     }
@@ -692,16 +615,12 @@
         margin-top: 60px;
     }
     .scroll-section h2{
-        margin-left: 25px;
+        margin-left: 50px;
     }
     .scroll-gap{
-        margin-left: 20px;
+        margin-left: 50px;
         display: block;
-        width: 300px;
-    }
-    .scroll-gap p{
-        margin-left: 5px;
-        width: 220px;
+        width: 275px;
     }
     .scroll-boxes{
         margin-top: 40px;
@@ -719,17 +638,17 @@
 
     /*Support section*/
     .support-section{
-        width: 375px;
+        width: 100%;
         font-size: 21px;
     }
     .support-logos{
         margin-top: 30px;
     }
-    .support-1{
+    .australia{
         width: 113.049px;
         height: 45px;
     }
-    .support-2{
+    .wisa{
         width: 62.561px;
         height: 45px;
     }
@@ -741,7 +660,7 @@
     /*Contact section*/
     .contact-section{
         margin-top: 218px;
-        max-width: 375px;
+        max-width: 100%;
         height: 527px;
     }
     .contact-section img{

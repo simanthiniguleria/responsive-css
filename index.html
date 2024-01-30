@@ -6,23 +6,28 @@
         <meta name="author" content="CT Solutions" />
         <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1" /> 
         <meta name="keywords" content="Stanton & Stanton" />
-        <meta name="description" content="Navigating the law on our client's behalf, we achieve the best commercial and legal outcomes for them. We then go beyond expectation, making a meaningful and lasting contribution to our client’s business."/>
+        <meta name="description" content="Making responsive site for mobile and tablets"/>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="responsive.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     </head>
     <body>
 
-        <!--Header-->
+        <!--Header starts-->
         <header>
-            <!--Coloured Dark Line-->
-            
+           
+            <div class="heading"></div>
             <div class="header-bar">
                 <div class="logo">
-                    <a href="#homepage"><img src="images/Logo.jpg" alt="Stanton & Stanton logo"></a>
+                    <a href="#homepage"><img src="Logos.svg" alt="Stanton & Stanton logo"></a>
                 </div>
-                <div class="header-content">
+                <div class="header-part">
+                    <div class="search-icon"><a href="#search"><img src="Search.svg" alt="Search icon" ></a></div>
+                    <div class="control-lines">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
                     <nav>
                         <ul>
                             <li><a href="#what-we-do">What we do</a></li>
@@ -31,58 +36,53 @@
                             <li><a href="#news-insight">News & Insights</a></li>
                         </ul>
                     </nav>
-                    <div class="search"><a href="#search"><img src="images/search.jpg" alt="Search icon" ></a></div>
-                    <div class="controls-line">
-                        <div class="line"></div>
-                        <div class="line"></div>
-                        <div class="line"></div>
-                      </div>
+                    <div class="search"><a href="#search"><img src="Search.svg" alt="Search icon" ></a></div>
                     
-
-
-                    <div class="enquiry-button">
                         <div class="primary-button">
                             <a href="#enquiry">Make an enquiry</a>
                         </div>
-                    </div>
+                   
                 </div>
             </div>
             
         </header>
-        <div class="menu">
-            <ul>
-                 <li><a href="#">What we do</a></li>
-                 <li><a href="#">Our People</a></li>
-                 <li><a href="#">Our Story</a></li>
-                 <li><a href="#">News & Insights</a></li>
-                 <li><a href="#">Careers</a></li>
-                 <li><a href="#">Contacts</a></li>
-                 <li class="sites">
-                <ul>
-                   <li><img src="/images/linkedin.jpg"></li>
-                   <li><img src="/images/facebook.svg"></li>
-                   <li><img src="/images/instagram.png"></li>
-                </ul>
-                 </li>
-            </ul>
-            <div class="enquirybtn">
-                <a href="#enquiry">Make an enquiry</a>
-            </div>
-          </div>
 
         <main>
 
             <div class="body-container">
+                <!--Mobile Menu starts -->
+                <div class="toggle">
+                    <ul>
+                        <li>
+                            <a href="#what-we-do">What we do</a>
+                            <img class="open" src="toggle-right.svg" alt="Select">
+                        </li>
+                        <li><a href="#our-people">Our People</a></li>
+                        <li><a href="#our-story">Our Story</a></li>
+                        <li><a href="#news-insight">News & Insights</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                        <li class="social-icons">
+                            <ul>
+                                <li><img src="linkedin.svg"></li>
+                                <li><img src="facebook.svg"></li>
+                                <li><img src="instagram.svg"></li>
+                            </ul>
+                        </li>
+                        <li class="button"><div class="primary-button"><a href="#enquiry">Make an enquiry</a></div></li>
+                    </ul>
+                </div>
 
-            <!--Banner-->
+            
+            <!--GO beyond section-->
             <section>
                 <div class="banner-section">
                     <div class="banner-container">
-                        <img src="images/ban.jpg" alt="Banner image">
+                        <img src="Banner image.svg" alt="Banner image">
                         <div class="right-icon">
-                            <img src="Right.png" alt="Right icon">
+                            <img src="chevron-right.svg" alt="Right icon">
                         </div>
-                        <div class="banner-content-container">
+                        <div class="ban-content-container">
                             <div class="banner-content">
                                 <h1>Go Beyond.</h1>
                                 <p>We go <span>beyond the law</span> with a deep understanding of the <span>food, wine, spirits</span> and <span>agricultural</span> sectors, offering specialist commercial and legal advice <span>tailored to you</span> and <span>your business</span> needs. </p>
@@ -98,15 +98,15 @@
                 </div>
             </section>
 
-            <!--What we do-->
+            <!--What we do section-->
             <section>
-                <div class="menu-info-container">
+                <div class="menu-container">
                     <div class="menu-info">
                         <h1>What <span>we do</span></h1>
                         <p>We’re driven by the success of our clients. Navigating the law on their behalf, we achieve the best commercial and legal outcomes for them. We then go beyond expectation, making a meaningful and lasting contribution to our client’s business.</p>
 
                         <div class="secondary-button"><a href="#menu-info">Learn more</a></div>
-                        <img src="images/logo2.png" alt="logo watermark">
+                        <img src="Content logo.svg" alt="logo watermark">
                     </div>
                 </div>
             </section>
@@ -117,44 +117,44 @@
                     <h1>The sectors <span>we specialise in</span></h1>
                     <ul class="rounded-grid-container">
                         <li class="sphere">
-                            <img src="images/f&b.jpg" alt="Food & Beverage">
+                            <img src="food.png" alt="Food & Beverage">
                             <div class="sphere-text">Food & Beverage</div>
                         </li>
                         <li class="sphere">
-                            <img src="images/wine.jpg" alt="Wine">
+                            <img src="wine.png" alt="Wine">
                             <div class="sphere-text">Wine</div>
                         </li>
                         <li class="sphere">
-                            <img src="images/agri.jpg" alt="Agribusiness">
+                            <img src="agri.png" alt="Agribusiness">
                             <div class="sphere-text">Agribusiness</div>
                         </li>
                         <li class="sphere">
-                            <img src="images/re&p.jpg" alt="Real Estate & Projects">
+                            <img src="esate.png" alt="Real Estate & Projects">
                             <div class="sphere-text">Real Estate & Projects</div>
                         </li>
                         <li class="sphere">
-                            <img src="images/water.jpg" alt="Water">
+                            <img src="water.png" alt="Water">
                             <div class="sphere-text">Water</div>
                         </li>
                     </ul>
                     <div class="sphere-sliders">
                         <ul>
-                            <li><img src="images/Left.svg" alt="Go Left"></li>
-                            <li><img src="images/rect464.svg" alt="Selected"></li>
-                            <li class="unselected"><img src="images/rect464.svg" alt="Not Selected"></li>
-                            <li class="unselected"><img src="images/rect464.svg" alt="Not Selected"></li>
-                            <li class="unselected"><img src="images/rect464.svg" alt="Not Selected"></li>
-                            <li><img src="images/right.jpeg" alt="Go Right"></li>
+                            <li><img src="Left.svg" alt="Go Left"></li>
+                            <li><img src="Rectangle.svg" alt="Selected"></li>
+                            <li class="unselected"><img src="Rectangle.svg" alt="Not Selected"></li>
+                            <li class="unselected"><img src="Rectangle.svg" alt="Not Selected"></li>
+                            <li class="unselected"><img src="Rectangle.svg" alt="Not Selected"></li>
+                            <li><img src="Right.svg" alt="Go Right"></li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!--Our People-->
+            <!--Our People section-->
             <section>
                 <div class="team-section">
                     <div class="team-container">
-                        <img src="images/team.jpg" alt="Our People">
+                        <img src="Section-4 img.svg" alt="Our People">
                         <div class="team-content-container">
                             <div class="team-content">
                                 <h1>Our People</h1>
@@ -166,11 +166,11 @@
                 </div>
             </section>
 
-            <!--Our Story-->
+            <!--Our Story section-->
             <section>
                 <div class="story-section">
                     <div class="story-container">
-                        <img src="images/field.jpg" alt="Our Story">
+                        <img src="Section-5 img.svg" alt="Our Story">
                         <div class="story-content-container">
                             <div class="story-content">
                                 <h1>Our Story</h1>
@@ -194,7 +194,7 @@
                         <ul>
                             <li>
                                 <div class="box-out">
-                                    <img src="images/2.png" alt="Landscape">
+                                    <img src="SS_P29_Image_0001.svg" alt="Landscape">
                                     <div class="box-content">
                                         <h1>10 June, 2023 -  by John Smith </h1>
                                         <h3>The Octopus Data Breach</h3>
@@ -205,7 +205,7 @@
                             </li>
                             <li>
                                 <div class="box">
-                                    <img src="images/5.jpg" alt="Mountains">
+                                    <img src="SS_P29_Image_0002.svg" alt="Mountains">
                                     <div class="box-content">
                                         <h1>10 June, 2023 -  by John Smith </h1>
                                         <h3>ACCC crackdown on Unfair Contract Terms</h3>
@@ -216,7 +216,7 @@
                             </li>
                             <li>   
                                 <div class="box">
-                                    <img src="images/4.jpg" alt="Plants">
+                                    <img src="SS_P29_Image_0003.svg" alt="Plants">
                                     <div class="box-content">
                                         <h1>10 June, 2023 -  by John Smith </h1>
                                         <h3>Further employment law changes incoming</h3>
@@ -227,7 +227,7 @@
                             </li>
                             <li>
                                 <div class="box">
-                                    <img src="images/3.png" alt="Fruits">
+                                    <img src="SS_P29_Image_0004.svg" alt="Fruits">
                                     <div class="box-content">
                                         <h1>10 June, 2023 -  by John Smith </h1>
                                         <h3>Four strategies for law firms to close the digital gap</h3>
@@ -238,7 +238,7 @@
                             </li>
                             <li>
                                 <div class="box">
-                                    <img src="images/1.png" alt="Landscape">
+                                    <img src="SS_P29_Image_0001.svg" alt="Landscape">
                                     <div class="box-content">
                                         <h1>10 June, 2023 -  by John Smith </h1>
                                         <h3>The Octopus Data Breach</h3>
@@ -249,7 +249,7 @@
                             </li>
                             <li>    
                                 <div class="box-out">
-                                    <img src="images/5.jpg" alt="Mountains">
+                                    <img src="SS_P29_Image_0002.svg" alt="Mountains">
                                     <div class="box-content">
                                         <h1>10 June, 2023 -  by John Smith </h1>
                                         <h3>ACCC crackdown on Unfair Contract Terms</h3>
@@ -262,25 +262,25 @@
                     </div>
                     <div class="sliders">
                         <ul>
-                            <li><img src="images/Left.svg" alt="Go Left"></li>
-                            <li><img src="images/rect464.svg" alt="Selected"></li>
-                            <li class="unselected"><img src="images/rect464.svg" alt="Not Selected"></li>
-                            <li class="unselected"><img src="images/rect464.svg" alt="Not Selected"></li>
-                            <li class="unselected"><img src="images/rect464.svg" alt="Not Selected"></li>
-                            <li><img src="images/right.jpeg" alt="Go Right"></li>
+                            <li><img src="Left.svg" alt="Go Left"></li>
+                            <li><img src="Rectangle.svg" alt="Selected"></li>
+                            <li class="unselected"><img src="Rectangle.svg" alt="Not Selected"></li>
+                            <li class="unselected"><img src="Rectangle.svg" alt="Not Selected"></li>
+                            <li class="unselected"><img src="Rectangle.svg" alt="Not Selected"></li>
+                            <li><img src="Right.svg" alt="Go Right"></li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!--Proudly Supporting-->
+            <!--Proudly Supporting section-->
             <section>
                 <div class="support-section">
                     <h1>Proudly Supporting</h1>
                     <div class="support-logos">
-                        <img class="support-1" src="images/Australian.jpg" alt="Australian Wine">
-                        <img class="support-2" src="images/WineIndustrySupplier.jpg" alt="WISA">
-                        <img class="support-3" src="images/WineIndustryimpact.jpg" alt="IMPACT Awards">
+                        <img class="australia" src="australia.svg" alt="Australian Wine">
+                        <img class="wisa" src="wisa.svg" alt="WISA">
+                        <img class="awards" src="awards.svg" alt="IMPACT Awards">
                     </div>
                 </div>
             </section>
@@ -298,7 +298,7 @@
                             <div class="primary-button"><a href="#make-an-enquiry">Make an enquiry</a></div>
                         </div>
                     </div>
-                    <img src="images/logo4.png" alt="Logo watermark">
+                    <img src="Logo white.svg" alt="Logo watermark">
                 </div>
             </section>
             </div>
@@ -308,15 +308,15 @@
         <footer>
             <div class="footer-section">
                 <div class="footer-bar-1">
-                    <img src="images/Logo.jpg" alt="Stanton & Stanton">
-                    <ul class="media">
-                        <a href="https://linkedin.com" class="media"><i class="fa-brands fa-linkedin-in"></i></a> &nbsp;
-      <a href="https://www.facebook.com/"class="media"><i class="fa-brands fa-facebook-f"></i></a> &nbsp;
-      <a href="https://instagram.com"class="media"><i class="fa-brands fa-instagram"></i></a>   
+                    <img src="Logos.svg" alt="Stanton & Stanton">
+                    <ul>
+                        <li><a href="#LinkedIn" ><img src="linkedin.svg" alt="LinkedIn"></a></li>
+                        <li><a href="#Facebook"><img src="facebook.svg" alt="Facebook"></a></li>
+                        <li><a href="#Instagram"><img src="instagram.svg" alt="Instagram"></a></li>
                     </ul>
                 </div>
-                <div class="footer-bar-2">
-                    <div class="footer-left-list">
+                <div class="footer2">
+                    <div class="footer-left">
                         <nav>
                             <ul>
                                 <li><a href="#what-we-do">What we do</a></li>
@@ -346,6 +346,7 @@
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-        <script src="responsive.js"></script> 
+        <script src="responsive.js"></script>
+        
     </body>    
 </html>

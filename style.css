@@ -71,6 +71,14 @@ a{
 ul{
     list-style-type: none;
 }
+h1 span{
+    font-family: Tiempos Headline;
+    color: #8B3C50;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 140%;
+}
 /*End of Default CSS*/
 
 /*Primary button*/
@@ -127,7 +135,7 @@ ul{
 }
 
 /*Header*/
-.top-bar::before{
+.heading::before{
     content:"";
     position:absolute;
     display: flex;
@@ -138,56 +146,14 @@ ul{
     top: 0px;
     z-index: 1;
 }
-.menu{
-    display: none;
-
-    max-width: 720px;
-    margin-top: 50px;
-    margin-left: 20px;
-  }
-  .menu a{
-  text-decoration: none;
-  line-height: 160%;
-  color: #1D1D1B;
-  transition: color 1s;
-  }
-  .menu li {
-    padding-bottom: 34px;
-  }
-
-  .enquirybtn a{
-    padding: 12px 16px 14px 16px;
-    margin: 90px 125px;
-    width: 335px; 
-    text-align: center;
-
-    background-color: #8B3C50;
-    border-radius: 1px;
-    text-decoration: none;
-    color: #FCF7F8;
-    border:1px solid #EEEEEE;
-    transition: color 1s, background-color 2s;
-    font-family: Tiempos Text-2;
-    line-height: 130%;
+header{
+    background-color: #FFFFFF;
 }
-  .enquirybtn a:hover{
-    color:#8B3C50;
-    background-color: #FCF7F8;
-}
-  .sites {
-  padding-top: 16px;
-}
-.sites ul{
-  display: flex;
-}
-.sites li{
-  padding-right: 31px;
-}
-   
 .header-bar{
     display: flex;
     max-width: 1280px;
     margin: auto;
+    position: relative;
     justify-content: space-between;
     align-items: center;
     padding: 60px 0px;
@@ -196,8 +162,7 @@ ul{
     width: 376.25px;
     height: 28px;
 }
-
-.header-content{
+.header-part{
     display: flex;
     align-items: center;
     font-family: Tiempos Text;
@@ -205,52 +170,113 @@ ul{
     font-style: normal;
     font-weight: 400;
 }
-.header-content nav ul{
+.header-part nav ul{
     display: flex;
     align-items: center;
 }
-.header-content nav ul li{
+.header-part nav ul li{
     padding-right: 50px;
 }
-.header-content img{
-    width: 24px;
-    height: 24px;
-}
-.header-content nav a{
-    text-decoration: none;
+.header-part nav a{
     line-height: 160%;
     color: #1D1D1B;
     transition: color 1s;
 }
-.header-content nav a:hover{
+.header-part nav a:hover{
     color: #8B3C50;
+}
+.search-icon{
+    display: none;
 }
 .search{
     transition: opacity 1s;
-    padding-right: 50px;
+    padding-right: 53px;
     width: 24px;
     height: 24px;
 }
 .search:hover{
     opacity: 0.5;
 }
-.controls-image{
-    display: none;
+
+.control-lines{
+    display: grid;
     width: 24px;
     height: 24px;
 }
- .controls-line{
-
-    display: none;
- }
-
- .line{
-    width: 20px;
-    height: 3px;
-    margin: 3px;
+.line1,
+.line2,
+.line3{
     background-color: #8B3C50;
- 
-   }
+    margin: 6px 0;
+    height:2px;
+    width: 24px;
+    transition: all 0.5s ease-in-out;
+}
+
+.line1-transform{
+    transform: translate(0, 8px) rotate(-45deg);
+}
+.line3-transform{
+    transform: translate(0, -8px) rotate(45deg);
+}
+.line2-transform{
+    opacity: 0;
+}
+
+/*toggle button*/
+.control-lines{
+    display: none;
+}
+.toggle{
+    display: none;
+    position: fixed;
+    z-index: 5;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    max-width: 1280px;
+    margin: auto;
+    height:100vh;
+    width: 100%;
+}
+.toggle-active{
+    display: block;
+}
+.toggle a{
+    text-decoration: none;
+    line-height: 160%;
+    color: #1D1D1B;
+    transition: color 1s;
+}
+.toggle a:hover{
+    color: #8B3C50;
+}
+.toggle li{
+    padding-bottom: 34px;
+    display: flex;
+    justify-content: space-between;
+}
+.social-icons{
+    padding-top: 16px;
+}
+.social-icons ul{
+    display: flex;
+}
+.social-icons li{
+    padding-right: 31px;
+}
+.social-icons img{
+    width:24px;
+    height:24px;
+    transition: opacity 1s;
+}
+.social-icons img:hover{
+    opacity: 0.5;
+}
+.button .primary-button a{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 /*Footer*/
 footer{
     margin: auto;
@@ -285,7 +311,7 @@ footer{
     opacity: 0.5;
 }
 
-.footer-bar-2{
+.footer2{
     margin-top: 80px;
     height:124px;
     display: flex;
@@ -293,28 +319,28 @@ footer{
     justify-content: space-between;
     border-bottom: 1px solid #C7C7C7;
 }
-.footer-left-list{
+.footer-left{
     position: absolute;
 }
-.footer-left-list nav{
+.footer-left nav{
     font-family: Tiempos Text;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
 }
-.footer-left-list nav ul{
+.footer-left nav ul{
     display: flex;
 }
-.footer-left-list nav ul li{
+.footer-left nav ul li{
     padding-right: 50px;
 }
-.footer-left-list nav a{
+.footer-left nav a{
     text-decoration: none;
     line-height: 160%;
     color: #1D1D1B;
     transition: color 1s;
 }
-.footer-left-list nav a:hover{
+.footer-left nav a:hover{
     color:#8B3C50
 }
 .footer-left-text p{
@@ -375,7 +401,7 @@ footer{
 
 /*CSS for body*/
 .body-container{
-    max-width:1360px;
+    max-width:1280px;
     margin: auto;
     position: relative;
     overflow: hidden;
@@ -383,7 +409,7 @@ footer{
 
 /*Banner section*/
 .banner-section{
-    max-width: 1280px;
+    max-width: 100%;
     margin:auto;
     margin-bottom: 90px;
     position: relative;
@@ -403,7 +429,7 @@ footer{
     right: 0px;
     z-index: 2;
 }
-.banner-content-container{
+.ban-content-container{
     position: absolute;
     width: 625px;
     height: 450px;
@@ -461,10 +487,10 @@ footer{
 }
 
 /*What we do section*/
-.menu-info-container{
+.menu-container{
     margin-top: 90px;
     margin-bottom: 90px;
-    max-width: 1280px;
+    max-width: 100%;
     margin: auto;
 }
 .menu-info{
@@ -481,14 +507,6 @@ footer{
     line-height: 140%;
     padding-top: 90px;
     color: #1D1D1B;
-}
-.menu-info h1 span{
-    font-family: Tiempos Headline;
-    color: #8B3C50;
-    font-size: 32px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 140%;
 }
 .menu-info p{
     padding-top: 30px;
@@ -512,7 +530,7 @@ footer{
 
 /*Speciality section*/
 .rounded-grid-section{
-    max-width: 1280px;
+    max-width: 100%;
     text-align: center;
     justify-content: center;
     margin: auto;
@@ -527,14 +545,6 @@ footer{
     line-height: 140%;
     padding-top: 90px;
     color: #1D1D1B;
-}
-.rounded-grid-section h1 span{
-    font-family: Tiempos Headline;
-    color:#8B3C50;
-    font-size: 32px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: 140%;
 }
 .rounded-grid-container {
     list-style: none;
@@ -582,14 +592,14 @@ footer{
 /*Our People*/
 .team-section{
     overflow: hidden;
-    max-width: 1280px;
+    max-width: 100%;
     margin: auto;
 }
 .team-container{
     background-color: rgba(97,119,135,0.2);
     position: relative;
     height: 530px;
-    left: -5px;
+    left: -66px;
 }
 .team-container img{
     position: absolute;
@@ -619,8 +629,8 @@ footer{
 }
 
 /*Our Story section*/
-.story-container{
-    max-width: 1280px;
+.story-section{
+    max-width: 100%;
     margin: auto;
 }
 .story-container{
@@ -660,15 +670,14 @@ footer{
 /*Card Scroll section*/
 .scroll-section{
     position:relative;
-    max-width: 1366px;
+    max-width: 1596px;
+    margin:auto;
     margin-top: 120px;
     margin-bottom: 80px;
-    margin-left: 50px;
-    overflow: hidden;
 }
 
 .scroll-section h2{
-    margin-left: 120px;
+    margin-left: 152px;
     font-family: Tiempos Headline;
     font-size: 32px;
     font-style: italic;
@@ -678,45 +687,48 @@ footer{
 }
 .scroll-gap{
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 152px;
 }
 .scroll-gap p{
     color: #1D1D1B;
-    margin-top: 30px;
-    margin-left: 120px;
-    font-size: 18px;
 }
 .scroll-gap a{
     color:#8B3C50;
     text-decoration-line: underline;
-    line-height: 110%;
-    margin-top: 30px;
-   margin-right: 120px;
-   font-size: 17px;
+    line-height: 130%;
+    margin-right: 52px;
+}
+.scroll-boxes{
+    margin-top: 60px;
 }
 .scroll-boxes ul{
     display: flex;
-    margin-top: 60px;
-    padding: 7px 20px;
     position: absolute;
-    left: -5%;
+    left: -154px;
 }
 .scroll-boxes li{
-    padding: 0px 7px;
-    padding-bottom: 20px;
+    padding-right:7px;
+}
+.box{
+    width: 260px;
 }
 .box img{
+    height: 292px;
     border-bottom: 8px solid #8B3C50;
 }
 .box-out{
+    width: 260px;
     opacity: 0.3;
 }
 .box-out img{
+    height: 292px;
     border-bottom: 8px solid #8B3C50;
 }
 .box-content{    
+    padding-left: 20px;
     margin-top: 20px;
-    padding-left: 10px;
     border-left: 1px solid #C7C7C7;
 }
 .box-content h1{
@@ -728,13 +740,13 @@ footer{
 .box-content h3{
     color: #8B3C50;
     padding-bottom: 9px;
-    font-size: 21px;
 }
 .box-content p{
     color: #555555;
-    font-size: 16px;
-    max-height: 102px;
+    font-size: 13px;
+    max-height: 50px;
     overflow: hidden;
+    padding-bottom: 9px;
 }
 .box-content a{
     color: #8B3C50;
@@ -744,22 +756,22 @@ footer{
 }
 
 .sliders{
-    margin-left: 115px;
+    margin-left: 152px;
     margin-top: 715px;
 }
 .sliders ul{
     display: flex;
-    align-items:center;
+    align-items: center;
 }
 .sliders ul li{
-    padding-left: 5px;
-    padding-right: 20px;
+    padding-right: 26px;
     display: flex;
-    align-items: left;
+    align-items: center;
 }
 .unselected{
     opacity:0.2;
 }
+
 /*Proudly Supporting*/
 .support-section{
     max-width: 995.008px;
@@ -777,23 +789,17 @@ footer{
     justify-content: space-between;
     margin-bottom: 3px;
 }
-.support-1{
+.australia{
     width: 304.344px;
     height: 120px;
 }
-.support-2{
+.wisa{
     width: 171.544px;
     height: 120px;
 }
-.support-3{
+.awards{
     width: 121.008px;
     height: 120px;
-}
-
-.media{
-  color: #8B3C50 ;
-  text-align: right;
-  margin-right: 30px;
 }
 
 /*Last section*/
@@ -802,7 +808,7 @@ footer{
     margin:auto;
     background-color: #FCF7F8;
     margin-top: 234px;
-    max-width: 1280px;
+    max-width: 100%;
     height: 458px;
 }
 .contact-layout{
